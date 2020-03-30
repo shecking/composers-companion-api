@@ -30,7 +30,7 @@ const router = express.Router()
 // INDEX
 // GET /sketches
 router.get('/sketches', requireToken, (req, res, next) => {
-  Sketch.find()
+  Sketch.find({ owner: req.user._id })
     .then(sketches => {
       // `sketches` will be an array of Mongoose documents
       // we want to convert each one to a POJO, so we use `.map` to
@@ -84,7 +84,6 @@ router.patch('/sketches/:id', requireToken, removeBlanks, (req, res, next) => {
     .then(sketch => {
       // pass the `req` object and the Mongoose record to `requireOwnership`
       // it will throw an error if the current user isn't the owner
-      requireOwnership(req, sketch)
 
       // pass the result of Mongoose's `.update` to the next `.then`
       return sketch.updateOne(req.body.sketch)
