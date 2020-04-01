@@ -1,15 +1,30 @@
 const mongoose = require('mongoose')
 
 const sketchSchema = new mongoose.Schema({
-  composer: {
-    type: String,
-    required: true
-  },
-  music: {
-    type: String,
-    required: true
-  },
   description: {
+    type: String,
+    required: true
+  },
+  composer: {
+    type: String
+  },
+  clef: {
+    type: String,
+    required: true
+  },
+  key: {
+    type: String
+  },
+  meter: {
+    type: String
+  },
+  tempo: {
+    type: String
+  },
+  length: {
+    type: String
+  },
+  notes: {
     type: String,
     required: true
   },
