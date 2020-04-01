@@ -9,8 +9,9 @@ const sketchSchema = new mongoose.Schema({
     type: String
   },
   clef: {
-    type: String,
-    required: true
+    selectedClefOption: {
+      type: String
+    }
   },
   key: {
     type: String
