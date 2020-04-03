@@ -5,9 +5,13 @@ This application, Composer's Companion, is intended for musicians, composers, so
 ## Important Links:
 
 Link to the back-end server: <https://aqueous-earth-22729.herokuapp.com/>
+
 (note: this application's server is hosted by Heroku; HTTP 404 is expected at this link)
+
 Link to the back-end repo:<https://github.com/shecking/composers-companion-api>
+
 Link to the front-end application: <https://shecking.github.io/composers-companion-client/#/>
+
 Link to the front-end repo: <https://github.com/shecking/composers-companion-client>
 
 ## Setup and Installation
