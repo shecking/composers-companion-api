@@ -1,12 +1,12 @@
 # Composer's Companion: Application Description
 
-This application, Composer's Companion, is intended for musicians, composers, songwriters, and performers of all kinds. It provides a quick, lightweight way for users to log and access printed music ideas from a browser, and without the need for complex software. Composer's Companion was created using React and JavaScript (front-end) and Express (back-end).
+This application, Composer's Companion, is intended for musicians, composers, songwriters, and performers of all kinds. It provides a quick, lightweight way for users to log and access printed music ideas from a browser, and without the need for complex software. Composer's Companion was created using JavaScript, React (front-end), and Express (back-end).
 
 ## Important Links:
 
 Link to the back-end server: <https://aqueous-earth-22729.herokuapp.com/>
 
-(note: this application's server is hosted by Heroku; HTTP 404 is expected at this link)
+(note: this application's server is hosted by Heroku; failed HTTP GET request is expected at this link)
 
 Link to the back-end repo:<https://github.com/shecking/composers-companion-api>
 
@@ -16,10 +16,10 @@ Link to the front-end repo: <https://github.com/shecking/composers-companion-cli
 
 ## Setup and Installation
 
-- Fork and clone this repository and its front-end counterpart using Git/GitHub
-- Navigate to this client repository using command line
-- Run `npm install` to install dependencies
-- Run `npm run server` to start up a local server
+-   Fork and clone this repository, and its front-end counterpart, using Git/GitHub
+-   Navigate to the new composers-companion-api folder using command line
+-   Run `npm install` to install dependencies
+-   Run `npm run server` to start up a local server
 
 ## Planning Story:
 
@@ -27,9 +27,17 @@ As a musician and composer, I've had plenty of experience with music notation so
 
 This application represents my first major project combining the React and Express libraries. Using pre-constructed 'boilerplates' of both, I was able to establish a simple program to store basic text input, which would serve as the basis for building the notation capabilities. Having previously used Express for another project, much of my effort was the integration of a music notation code library into a text-based language. Overall, I followed a more general workflow structure, and became more comfortable with the larger picture of software development rather than being bogged down by minute-to-minute details.
 
-### ERD:
+### Technologies Used:
 
-<https://imgur.com/1hKHU3D>
+-   Express.js
+-   JavaScript
+-   MongoDB
+-   Mongoose
+-   Heroku
+
+### Entity Resource Diagram:
+
+![imgur](https://i.imgur.com/1hKHU3D.png "ERD")
 
 ### Route Catalogue
 
