@@ -23,7 +23,9 @@ const sketchSchema = new mongoose.Schema({
     type: String
   },
   length: {
-    type: String
+    selectedLengthOption: {
+      type: String
+    }
   },
   notes: {
     type: String,
